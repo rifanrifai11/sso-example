@@ -7,8 +7,6 @@ import android.util.Log
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.security.crypto.EncryptedSharedPreferences
-import androidx.security.crypto.MasterKey
 import com.sso.ssopaser.utility.PrefManager
 import net.openid.appauth.AuthorizationException
 import net.openid.appauth.AuthorizationRequest
@@ -90,7 +88,9 @@ class LoginActivity : AppCompatActivity() {
             authService.performTokenRequest(tokenRequest) { tokenResponse, tokenEx ->
                 runOnUiThread {
                     if (tokenResponse != null) {
-                        Log.d("SSO-CHECK", "Access Token: ${tokenResponse.scope}")
+                        // Export all response
+                        // val gson = GsonBuilder().setPrettyPrinting().create()
+                        // Log.d("AuthDebug", gson.toJson(tokenResponse))
 
                         val accessToken = tokenResponse.accessToken
                         val refreshToken = tokenResponse.refreshToken
