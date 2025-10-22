@@ -29,7 +29,7 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:fontFamily="monospace"
-        android:text="Login dilakukan dengan redirect ke halaman web SSO Paserkab &amp; kembali membawa response token."
+        android:text="@string/desc_sso"
         app:layout_constraintTop_toBottomOf="@id/img1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -38,7 +38,7 @@
         android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login Sekarang"
+        android:text="@string/login_sekarang"
         android:clickable="true"
         android:backgroundTint="@color/black"
         android:layout_marginTop="8dp"

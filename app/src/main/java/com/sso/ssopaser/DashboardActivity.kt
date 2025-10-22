@@ -48,6 +48,9 @@ class DashboardActivity : AppCompatActivity() {
     private fun getData() {
         val idToken = prefManager.getString("id_token", null)
 
+        binding.jwt.setText(prefManager.getIdToken())
+        binding.refreshTOken.setText(prefManager.getRefreshToken())
+
         if (!idToken.isNullOrEmpty()) {
             val userInfo = decodeIdTokens(idToken)
             userInfo?.let {

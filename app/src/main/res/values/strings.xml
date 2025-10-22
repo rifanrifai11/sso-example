@@ -42,4 +42,13 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="jwt">JWT</string>
+    <string name="email">email</string>
+    <string name="name">name</string>
+    <string name="iduser">idUser</string>
+    <string name="welcome_sso_paserkab">WELCOME SSO PASERKAB</string>
+    <string name="refresh_token">Refresh Token</string>
+    <string name="logout">LOGOUT</string>
+    <string name="desc_sso"><![CDATA[Login dilakukan dengan redirect ke halaman web SSO Paserkab & kembali membawa response token.]]></string>
+    <string name="login_sekarang">Login Sekarang</string>
 </resources>

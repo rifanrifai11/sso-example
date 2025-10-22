@@ -39,19 +39,5 @@
                     android:host="oauth2redirect" />
             </intent-filter>
         </activity>
-
-<!--        <activity-->
-<!--            android:name=".LogoutCallbackActivity"-->
-<!--            android:exported="true">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.VIEW" />-->
-<!--                <category android:name="android.intent.category.DEFAULT" />-->
-<!--                <category android:name="android.intent.category.BROWSABLE" />-->
-<!--                <data-->
-<!--                    android:scheme="${appAuthRedirectScheme}"-->
-<!--                    android:host="logout" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
-
     </application>
 </manifest>
