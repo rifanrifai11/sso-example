@@ -83,7 +83,7 @@ class DashboardActivity : AppCompatActivity() {
     private suspend fun logoutServer(refreshToken: String) {
         withContext(Dispatchers.IO) {
             try {
-                val url = URL("https://sso.paserkab.go.id/realms/development/protocol/openid-connect/logout")
+                val url = URL("https://sso.paserkab.go.id/realms/development_mobile/protocol/openid-connect/logout")
                 val postData = "client_id=development&refresh_token=$refreshToken"
 
                 with(url.openConnection() as HttpURLConnection) {

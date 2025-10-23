@@ -23,10 +23,11 @@ class LoginActivity : AppCompatActivity() {
 
     private lateinit var prefManager: PrefManager
 
-    private val clientId = "development"
+    private val clientId = "development_mobile"
+    private val realms = "development"
     private val redirectUri = Uri.parse("com.sso.ssopaser:/oauth2redirect")
-    private val authEndpoint = Uri.parse("https://sso.paserkab.go.id/realms/$clientId/protocol/openid-connect/auth")
-    private val tokenEndpoint = Uri.parse("https://sso.paserkab.go.id/realms/$clientId/protocol/openid-connect/token")
+    private val authEndpoint = Uri.parse("https://sso.paserkab.go.id/realms/$realms/protocol/openid-connect/auth")
+    private val tokenEndpoint = Uri.parse("https://sso.paserkab.go.id/realms/$realms/protocol/openid-connect/token")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
